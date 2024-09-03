@@ -12,7 +12,7 @@ const serveNumber15 = (req, res, next) => {
   res.send('<h2>Number 15<h2>');
 }
 const serveData = (req, res, next) => {
-  const data = [{ name: 'ben' }, { name: 'zo' }, { name: 'carmen' }];
+  const data = [{ name: 'huh?' }, { name: 'you guys heard that?' }, { name: 'nope' }];
   res.send(data);
 }
 const serveGreeting = (req, res, next) => {
@@ -25,7 +25,7 @@ const serveBruh = (req, res, next) => {
 }
 
 // endpoints
-app.get('/about', servePickles);
+app.get('/pickles', servePickles);
 app.get('/number15', serveNumber15);
 app.get('/api/data', serveData);
 app.get('/api/greeting', serveGreeting)
